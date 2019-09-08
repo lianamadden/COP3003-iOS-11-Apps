@@ -1,9 +1,8 @@
 # iOS-11-Apps
 
-Week 1. Introduction to iOS 11, Xcode 9 and Swift 4
-Lecture 1 Slides
-Free
-Reading 1: Intro to Swift
+Week 1. Introduction to iOS 11, Xcode 9 and Swift 4       COMPLETED 8/27/19
+Lecture 1 Slides                                          COMPLETED 8/27/19
+Reading 1: Intro to Swift                                 COMPLETED 9/7/19
 
 Week 2. MVC
 Lecture 2 Slides
