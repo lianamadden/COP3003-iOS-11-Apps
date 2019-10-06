@@ -5,15 +5,13 @@ Lecture 1 Slides                                          COMPLETED 8/27/19
 Reading 1: Intro to Swift                                 COMPLETED 9/7/19
 
 Week 2. MVC                                               COMPLETED 9/11/19
-Lecture 2 Slides
+Lecture 2 Slides                                          COMPLETED 9/11/19
 Programming Project 1: Concentration
 Friday Session 1: Debugging and Xcode Tips and Tricks     COMPLETED 9/11/19
 
-Week 3. Swift Programming Language
-Lecture 3 Slides
-Free
-10
-Reading 2: Intro to Swift
+Week 3. Swift Programming Language                        COMPLETED 9/28/19 
+Lecture 3 Slides                                          COMPLETED 9/28/19
+Reading 2: Intro to Swift                                 COMPLETED 9/11/19
 
 Week 4. More Swift
 Lecture 4 Slides
@@ -23,7 +21,7 @@ Week 5. Drawing
 Lecture 5 Slides
 Reading 3: Finishing Off Swift
 
-Week 5. Multitouch
+Week 6. Multitouch
 Lecture 6 Slides
 Programming Project 3: Graphical Set
 
