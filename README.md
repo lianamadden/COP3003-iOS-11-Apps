@@ -17,13 +17,13 @@ Week 4. More Swift                                        COMPLETED
 Lecture 4 Slides                                          COMPLETED
 Programming Project 2: Set                                
 
-Week 5. Drawing
-Lecture 5 Slides
+Week 5. Drawing                                           COMPLETED
+Lecture 5 Slides                                          COMPLETED
 Reading 3: Finishing Off Swift                            COMPLETED
 
 Week 6. Multitouch
-Lecture 6 Slides
-Programming Project 3: Graphical Set
+Lecture 6 Slides                                          COMPLETED
+Programming Project 3: Graphical Set                      COMPLETED
 
 Week 6. Multiple MVCs, Timer, and Animation
 Lecture 7 Slides
