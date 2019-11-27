@@ -8,15 +8,20 @@
 
 import Foundation
 //how the card works
-struct Card {
+struct Card: Hashable{
     
+    var hashValue: Int { return identifier }
+    
+    static func ==(lhs: Card, rhs: Card) -> Bool {
+        return lhs.identifier == rhs.identifier
+    }
     var isFaceUp = false
     var isMatched = false
-    var identifier: Int
+    private var identifier: Int
     
-    static var identifierFactory = 0
+    private static var identifierFactory = 0
     
-    static func getUniqueIdentifier() -> Int{ //cant send to card bc static
+    private static func getUniqueIdentifier() -> Int{ //cant send to card bc static
         Card.identifierFactory += 1
         return identifierFactory //doesnt need a Card. bc it's in a static struct
     }

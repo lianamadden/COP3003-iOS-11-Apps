@@ -10,19 +10,42 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    lazy var game = Concentration(numberOfPairsOfCards: (cardButtons.count + 1) / 2) //doesnt initialize until someone tries to use it by using "lazy"
+    private lazy var game = Concentration(numberOfPairsOfCards: numberOfPairsOfCards) //doesnt initialize until someone tries to use it by using "lazy"
     
-    var flipCount: Int = 0 {
+    var numberOfPairsOfCards: Int { //read only property
+            return (cardButtons.count+1)/2
+    }
+    
+    private (set) var flipCount: Int = 0 {
         didSet{
-            flipCountLabel.text = "Flips: \(flipCount)"
+           updateFlipCountLabel()
         }
     }
+    
+    private func updateFlipCountLabel() {
+        let attribute: [NSAttributedString.Key: Any] = [
+            .strokeWidth: 5.0,
+            .strokeColor: UIColor.orange
+        ]
+        let attributedString = NSAttributedString(string: "Flips: \(flipCount)", attributes: attribute)
+        flipCountLabel.attributedText = attributedString
+    }
 
-    @IBOutlet weak var flipCountLabel: UILabel!
+    @IBAction private func newGame(_ sender: UIButton) {
+        game = Concentration(numberOfPairsOfCards: (cardButtons.count + 1)/2)
+        flipCount = 0
+        updateViewFromModel()
+        
+    }
+    @IBOutlet private weak var flipCountLabel: UILabel!{
+        didSet {
+            updateFlipCountLabel()
+        }
+    }
     
-    @IBOutlet var cardButtons: [UIButton]!
+    @IBOutlet private var cardButtons: [UIButton]!
     
-    @IBAction func touchCard(_ sender: UIButton) {
+    @IBAction private func touchCard(_ sender: UIButton) {
         flipCount += 1
         if let cardNumber = cardButtons.index(of: sender){
             game.chooseCard(at: cardNumber)
@@ -30,7 +53,7 @@ class ViewController: UIViewController {
         }else {
             print("Chosen card was not in cardButtons.")
         }
-        
+    
     }
     func updateViewFromModel(){
         for index in cardButtons.indices { //indices is a countable range of int
@@ -46,18 +69,28 @@ class ViewController: UIViewController {
             }
         }
     }
-     var emojiChoices: Array <String> = ["🦃","😱","🙀","😈","🎃","👻","🍭","🍬","🍎"]
-    
+     //private var emojiChoices = ["🦃","😱","🙀","😈","🎃","👻","🍭","🍬","🍎"]
+     private var emojiChoices = ["🦃😱🙀😈🎃👻🍭🍬🍎"]
     //var emoji = Dictionary<Int,String>() //creates an empty dictionary
-    var emoji = [Int:String]()
+    private var emoji = [Card:String]()
     
-    func emoji(for card: Card) -> String{
-        if emoji[card.identifier] == nil, emojiChoices.count > 0{
-            let randomIndex = Int(arc4random_uniform(UInt32(emojiChoices.count)))
-            emoji[card.identifier] = emojiChoices.remove(at: randomIndex)
+    private func emoji(for card: Card) -> String{
+        if emoji[card] == nil, emojiChoices.count > 0{
+            let randomStringIndex = emojiChoices.index(emojiChoices.startIndex, offsetBy: emojiChoices.count.arc4random)
+            emoji[card] = String(emojiChoices.remove(at: randomStringIndex))
         }
-        return emoji[card.identifier] ?? "?" //it will return a nil if not right.
+        return emoji[card] ?? "?" //it will return a nil if not right.
     }
 
 }
-
+extension Int {
+    var arc4random: Int {
+        if self > 0 {
+        return Int(arc4random_uniform(UInt32(self)))
+    }else if self < 0{
+        return -Int(arc4random_uniform(UInt32(abs(self))))
+    }else{
+        return 0
+    }
+    }
+}
