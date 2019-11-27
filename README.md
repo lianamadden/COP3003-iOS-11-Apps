@@ -1,25 +1,25 @@
 # iOS-11-Apps
 
-Week 1. Introduction to iOS 11, Xcode 9 and Swift 4       COMPLETED 8/27/19
-Lecture 1 Slides                                          COMPLETED 8/27/19
-Reading 1: Intro to Swift                                 COMPLETED 9/7/19
+Week 1. Introduction to iOS 11, Xcode 9 and Swift 4       COMPLETED 
+Lecture 1 Slides                                          COMPLETED
+Reading 1: Intro to Swift                                 COMPLETED
 
-Week 2. MVC                                               COMPLETED 9/11/19
-Lecture 2 Slides                                          COMPLETED 9/11/19
+Week 2. MVC                                               COMPLETED
+Lecture 2 Slides                                          COMPLETED
 Programming Project 1: Concentration
-Friday Session 1: Debugging and Xcode Tips and Tricks     COMPLETED 9/11/19
+Friday Session 1: Debugging and Xcode Tips and Tricks     COMPLETED
 
-Week 3. Swift Programming Language                        COMPLETED 9/28/19 
-Lecture 3 Slides                                          COMPLETED 9/28/19
-Reading 2: Intro to Swift                                 COMPLETED 9/11/19
+Week 3. Swift Programming Language                        COMPLETED
+Lecture 3 Slides                                          COMPLETED
+Reading 2: Intro to Swift                                 COMPLETED
 
-Week 4. More Swift
-Lecture 4 Slides
-Programming Project 2: Set
+Week 4. More Swift                                        COMPLETED
+Lecture 4 Slides                                          COMPLETED
+Programming Project 2: Set                                
 
 Week 5. Drawing
 Lecture 5 Slides
-Reading 3: Finishing Off Swift
+Reading 3: Finishing Off Swift                            COMPLETED
 
 Week 6. Multitouch
 Lecture 6 Slides
