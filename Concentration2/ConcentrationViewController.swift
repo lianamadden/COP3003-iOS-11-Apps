@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ConcentrationViewController: UIViewController {
     
     private lazy var game = Concentration(numberOfPairsOfCards: numberOfPairsOfCards) //doesnt initialize until someone tries to use it by using "lazy"
     
@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     private func updateFlipCountLabel() {
         let attribute: [NSAttributedString.Key: Any] = [
             .strokeWidth: 5.0,
-            .strokeColor: UIColor.orange
+            .strokeColor: UIColor.black
         ]
         let attributedString = NSAttributedString(string: "Flips: \(flipCount)", attributes: attribute)
         flipCountLabel.attributedText = attributedString
@@ -56,17 +56,27 @@ class ViewController: UIViewController {
     
     }
     func updateViewFromModel(){
+        if cardButtons != nil {
         for index in cardButtons.indices { //indices is a countable range of int
             let button = cardButtons[index]
             let card = game.cards[index]
             if card.isFaceUp{
                 button.setTitle(emoji(for: card), for: UIControl.State.normal)
-                button.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+                button.backgroundColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
             }else {
                 button.setTitle("", for: UIControl.State.normal)
-                button.backgroundColor = card.isMatched ? #colorLiteral(red: 1, green: 0.5813322268, blue: 0.09839137518, alpha: 0) : #colorLiteral(red: 1, green: 0.5813322268, blue: 0.09839137518, alpha: 1)
+                button.backgroundColor = card.isMatched ? #colorLiteral(red: 1, green: 0.5813322268, blue: 0.09839137518, alpha: 0) : #colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1)
                 
             }
+        }
+        }
+    }
+    
+    var theme: String? {
+        didSet {
+            emojiChoices = [theme ?? ""]
+            emoji = [:]
+            updateViewFromModel()
         }
     }
      //private var emojiChoices = ["🦃","😱","🙀","😈","🎃","👻","🍭","🍬","🍎"]
