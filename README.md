@@ -25,8 +25,8 @@ Week 6. Multitouch                                        COMPLETED
 Lecture 6 Slides                                          COMPLETED
 Programming Project 3: Graphical Set                      COMPLETED
 
-Week 6. Multiple MVCs, Timer, and Animation             
-Lecture 7 Slides
+Week 6. Multiple MVCs, Timer, and Animation               COMPLETED            
+Lecture 7 Slides                                          COMPLETED
 
 Week 7. Animation
 Lecture 8 Slides
