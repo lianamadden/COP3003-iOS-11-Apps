@@ -33,8 +33,8 @@ Lecture 8 Slides                                          COMPLETED
 Programming Project 4: Animated Set
 Friday Session 2: Github and Source Control Workflow      COMPLETED
 
-Week 8. View Controller Lifecycle and Scroll View
-Lecture 9 Slides
+Week 8. View Controller Lifecycle and Scroll View         COMPLETED
+Lecture 9 Slides                                          COMPLETED
 
 Week 8. Multithreading and Autolayout
 Lecture 10 Slides
