@@ -28,10 +28,10 @@ Programming Project 3: Graphical Set                      COMPLETED
 Week 6. Multiple MVCs, Timer, and Animation               COMPLETED            
 Lecture 7 Slides                                          COMPLETED
 
-Week 7. Animation
-Lecture 8 Slides
+Week 7. Animation                                         COMPLETED
+Lecture 8 Slides                                          COMPLETED
 Programming Project 4: Animated Set
-Friday Session 2: Github and Source Control Workflow
+Friday Session 2: Github and Source Control Workflow      COMPLETED
 
 Week 8. View Controller Lifecycle and Scroll View
 Lecture 9 Slides
