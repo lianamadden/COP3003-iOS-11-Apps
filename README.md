@@ -36,9 +36,9 @@ Friday Session 2: Github and Source Control Workflow      COMPLETED
 Week 8. View Controller Lifecycle and Scroll View         COMPLETED
 Lecture 9 Slides                                          COMPLETED
 
-Week 8. Multithreading and Autolayout
-Lecture 10 Slides
-Friday Session 3: Instruments
+Week 8. Multithreading and Autolayout                     COMPLETED
+Lecture 10 Slides                                         COMPLETED
+Friday Session 3: Instruments                             COMPLETED
 
 Week 9. Drag and Drop, Table View, and Collection View
 Lecture 11 Slides
