@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait">
+    <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -10,45 +10,47 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Emoji Art View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Cassini" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="EmojiArtViewController" customModule="EmojiArt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s7Z-5b-176">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XTm-al-PrF">
+                                <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="896" translatesAutoresizingMaskIntoConstraints="NO" id="acI-LX-lIF">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wmu-Bo-X3d" customClass="EmojiArtView" customModule="EmojiArt" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="748"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                 </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="acI-LX-lIF" firstAttribute="top" secondItem="s7Z-5b-176" secondAttribute="top" id="CYX-PY-3ni"/>
-                                    <constraint firstItem="acI-LX-lIF" firstAttribute="leading" secondItem="s7Z-5b-176" secondAttribute="leading" id="NIe-u7-xgg"/>
-                                    <constraint firstItem="acI-LX-lIF" firstAttribute="trailing" secondItem="s7Z-5b-176" secondAttribute="trailing" id="Uhn-J2-HPY"/>
-                                    <constraint firstAttribute="bottom" secondItem="acI-LX-lIF" secondAttribute="bottom" id="q3R-Iu-Kou"/>
+                                    <constraint firstItem="Wmu-Bo-X3d" firstAttribute="leading" secondItem="XTm-al-PrF" secondAttribute="leading" id="aBm-pG-dJZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Wmu-Bo-X3d" secondAttribute="trailing" id="nK0-kw-nl8"/>
+                                    <constraint firstItem="Wmu-Bo-X3d" firstAttribute="top" secondItem="XTm-al-PrF" secondAttribute="top" id="pNB-h9-B24"/>
+                                    <constraint firstAttribute="bottom" secondItem="Wmu-Bo-X3d" secondAttribute="bottom" id="t9F-iI-atV"/>
                                 </constraints>
-                            </scrollView>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="s7Z-5b-176" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="2OP-NV-gle"/>
-                            <constraint firstItem="s7Z-5b-176" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Dei-I9-IpH"/>
-                            <constraint firstAttribute="bottom" secondItem="s7Z-5b-176" secondAttribute="bottom" id="EI8-ae-edp"/>
-                            <constraint firstItem="s7Z-5b-176" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Hpj-mj-LCt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XTm-al-PrF" secondAttribute="trailing" id="2Ez-4j-hao"/>
+                            <constraint firstItem="XTm-al-PrF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lbK-mf-owO"/>
+                            <constraint firstItem="XTm-al-PrF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="rCf-Xz-dnN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XTm-al-PrF" secondAttribute="bottom" id="t8Q-5z-b7u"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="ImageView" destination="acI-LX-lIF" id="MzK-I9-jmt"/>
+                        <outlet property="EmojiArtView" destination="Wmu-Bo-X3d" id="Are-I8-6Vo"/>
+                        <outlet property="dropZone" destination="XTm-al-PrF" id="5hp-0b-Pxu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
         </scene>
     </scenes>
 </document>
