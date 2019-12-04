@@ -43,8 +43,8 @@ Friday Session 3: Instruments                             COMPLETED
 Week 9. Drag and Drop, Table View, and Collection View    COMPLETED
 Lecture 11 Slides                                         COMPLETED
 
-Week 10. Drag and Drop, Table View, Collection View
-Lecture 12 Slides
+Week 10. Drag and Drop, Table View, Collection View       COMPLETED
+Lecture 12 Slides                                         COMPLETED
 Programming Project 5: Image Gallery
 
 Week 11. Persistence and Documents
