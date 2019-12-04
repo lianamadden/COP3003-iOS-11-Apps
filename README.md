@@ -54,8 +54,8 @@ Week 12. Persistence and Documents Demo                   COMPLETED
 Lecture 14 Slides                                         COMPLETED
 Programming Project 6: Persistent Image Gallery
 
-Week 13. Alerts, Notifications, Application Lifecycle
-Lecture 15 Slides
+Week 13. Alerts, Notifications, Application Lifecycle     COMPLETED
+Lecture 15 Slides                                         COMPLETED
 
 Week 14. More Segues
 Lecture 16 Slides
