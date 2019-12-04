@@ -40,10 +40,10 @@ Week 8. Multithreading and Autolayout                     COMPLETED
 Lecture 10 Slides                                         COMPLETED
 Friday Session 3: Instruments                             COMPLETED
 
-Week 9. Drag and Drop, Table View, and Collection View
-Lecture 11 Slides
+Week 9. Drag and Drop, Table View, and Collection View    COMPLETED
+Lecture 11 Slides                                         COMPLETED
 
-Week 10. Drag and Drop, Table View, Collection View, and Text Field
+Week 10. Drag and Drop, Table View, Collection View
 Lecture 12 Slides
 Programming Project 5: Image Gallery
 
