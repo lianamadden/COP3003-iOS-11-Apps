@@ -47,11 +47,11 @@ Week 10. Drag and Drop, Table View, Collection View       COMPLETED
 Lecture 12 Slides                                         COMPLETED
 Programming Project 5: Image Gallery
 
-Week 11. Persistence and Documents
-Lecture 13 Slides
+Week 11. Persistence and Documents                        COMPLETED
+Lecture 13 Slides                                         COMPLETED
 
-Week 12. Persistence and Documents Demo
-Lecture 14 Slides
+Week 12. Persistence and Documents Demo                   COMPLETED
+Lecture 14 Slides                                         COMPLETED
 Programming Project 6: Persistent Image Gallery
 
 Week 13. Alerts, Notifications, Application Lifecycle
