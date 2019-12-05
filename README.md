@@ -60,5 +60,5 @@ Lecture 15 Slides                                         COMPLETED
 Week 14. More Segues                                      COMPLETED
 Lecture 16 Slides                                         COMPLETED
 
-Week 15. Core Motion and Camera
-Lecture 17 Slides
+Week 15. Core Motion and Camera                           COMPLETED
+Lecture 17 Slides                                         COMPLETED
