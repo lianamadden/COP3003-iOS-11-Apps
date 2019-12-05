@@ -57,8 +57,8 @@ Programming Project 6: Persistent Image Gallery
 Week 13. Alerts, Notifications, Application Lifecycle     COMPLETED
 Lecture 15 Slides                                         COMPLETED
 
-Week 14. More Segues
-Lecture 16 Slides
+Week 14. More Segues                                      COMPLETED
+Lecture 16 Slides                                         COMPLETED
 
 Week 15. Core Motion and Camera
 Lecture 17 Slides
